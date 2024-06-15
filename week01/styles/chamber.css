@@ -1,0 +1,33 @@
+body {
+    background-color: White;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    background-color:indigo;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: indigo;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gold;
+}
+
+footer {
+    background-color: indigo;
+    display: grid;
+    gap: 1rem;
+}
