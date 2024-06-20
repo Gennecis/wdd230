@@ -11,17 +11,11 @@ header {
     align-items: center;
 }
 
-main{
-    max-width: 960px;
-    margin: 0 auto;
+.grid {
     display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
-}
-
-.card {
-    display: grid;
-    gap: 10px;
 }
 
 span {

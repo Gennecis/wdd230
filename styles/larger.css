@@ -1,16 +1,15 @@
 @media screen and (min-width: 600px) {
-    main {
-        display: grid;
-        /* grid-template-columns: 1fr; */
-        /* align-items: center; */
+    
+    
+    .grid {
+        grid-template-columns: 1fr 1fr; 
     }
+
 
     nav {
         display: flex;
         justify-content: space-around;
         width: 100%;
     }
-    nav {
-        grid-template-columns: 1fr 1fr;
-    }
+
 }
