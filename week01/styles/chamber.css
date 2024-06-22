@@ -17,6 +17,10 @@ nav {
     background-color: indigo;
 }
 
+main {
+    color: black;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -30,4 +34,5 @@ footer {
     background-color: indigo;
     display: grid;
     gap: 1rem;
+    color:white;
 }
