@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    
+    <script>
+        const list = document.querySelector('ul');
+        const input = document.querySelector('input');
+        const button = document.querySelector('button');
+        
+        function addItem() {
+            inputValue = input.value;
+            input.value = '';
+            const listItem = document.createElement('li');
+            const span = document.createElement('span');
+            span.textContent = inputValue;
+            const delButton = document.createElement('button');
+            delButton.textContent = 'Delete';
+            listItem.appendChild(span);
+            listItem.appendChild(delButton);
+            list.appendChild(listItem);
+            delButton.addEventListener('click', () => list.removeChild(listItem));
+            input.focus();
+        }
+        button.addEventListener('click', addItem)
+    </script>
+  </body>
+</html>
+
+<!-- <script>
+    const list = document.querySelector('ul');
+    const input = document.querySelector('input');
+    const button = document.querySelector('button');
+
+    function addItem() {
+        // Store the current value of the input element in a variable
+        const inputValue = input.value;
+
+        // Clear the input field after storing the value
+        input.value = '';
+
+        // Create a new list item (li) element
+        const listItem = document.createElement('li');
+
+        // Create a new span element and set its text content to the input value
+        const span = document.createElement('span');
+        span.textContent = inputValue;
+
+        // Create a new button element and set its text content to 'Delete'
+        const delButton = document.createElement('button');
+        delButton.textContent = 'Delete';
+
+        // Append the span and delete button to the list item
+        listItem.appendChild(span);
+        listItem.appendChild(delButton);
+
+        // Append the list item to the list
+        list.appendChild(listItem);
+
+        // Add event listener to the delete button to remove the list item when clicked
+        delButton.addEventListener('click', () => list.removeChild(listItem));
+
+        // Focus the input element for the next entry
+        input.focus();
+    }
+
+    // Add an event listener to the button to run the addItem function when clicked
+    button.addEventListener('click', addItem);
+</script> -->
