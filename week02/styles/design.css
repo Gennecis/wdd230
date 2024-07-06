@@ -9,6 +9,24 @@ footer {
 	margin: 0 auto;
 }
 
+.codepen {
+	color: navy;
+	text-align: justify;
+	font-weight: bold;
+    /* display: grid; */
+    /* grid-column: 1/3;; */
+}
+
+.codepen a {
+	color: navy;
+}
+
+.codepen a:hover {
+	
+	color: orangered;
+	/* font-weight: bold; */
+}
+
 .banner {
 	padding: 1rem;
 	background-color: #eee;
