@@ -1,17 +1,66 @@
 body {
     margin: auto;
     font-family: "Roboto", sans-serif;
-    background-color: beige;
+    background-color: whitesmoke;
 }
 
 header {
-    background-color: white;
+    /* background-color: white; */
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
+    padding-top: 1rem;
 }
 
 
+.section-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1% auto;
+    text-align: center;
+    
+}
+
+.spotlight-wrapper {
+    text-align: center;
+}
+
+#spotlight {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 1rem; */
+    justify-self: center;
+    /* padding: 20px; */
+    
+}
+
+
+.spotlight {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 1rem; */
+}
+
+.spotlight p{
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    /* gap: 1rem; */
+    background-color:#eceeef;
+}
+
+
+.current-event {
+    background-color:#eceeef;
+}
+
+.weather 
+{
+    background-color:#eceeef;
+}
+
+
+/*
 header button {
     padding: 0.5rem 0.5rem;
     border: none;
@@ -26,7 +75,7 @@ header button:hover {
     background-color: #0056b3;
 }
 
-/* Dark mode styles */
+Dark mode styles
 .dark-mode {
     background-color: #121212;
     color: #e0e0e0;
@@ -58,7 +107,7 @@ header button:hover {
 
 .dark-mode header button:hover {
     background-color: #222;
-}
+ } */
 
 
 .grid {
@@ -75,9 +124,13 @@ span {
     
 }
 
+.menu {
+    background-color: #36454f;
+}
+
 nav {
     display: block;
-    background-color: #36454f;
+    /* background-color: black; */
     margin: 0 auto;
     width: 100%;
     align-items: center;
@@ -86,13 +139,18 @@ nav {
 nav a {
     display: block;
     text-align: center;
-    padding: 1rem;
-    color: #fff;
+    padding: 0.5rem;
+    font-weight: 300;
+    color: #eceeef;
     text-decoration: none;
 }
 
 a:hover {
     color: gold;
+}
+
+ul li {
+    display: inline-block;
 }
 
 ul li a:hover {
@@ -103,7 +161,8 @@ a {
     text-decoration: none;
 }
 footer {
-    background-color: #36454f;
-    color: white;
+    /* background-color: white; */
+    color: #eceeef;
     display: grid;
+    background-color: #36454f;
 }
