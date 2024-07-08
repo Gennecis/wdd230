@@ -5,7 +5,6 @@ body {
 }
 
 header {
-    /* background-color: white; */
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
@@ -29,23 +28,17 @@ header {
 #spotlight {
     display: grid;
     grid-template-columns: 1fr;
-    /* gap: 1rem; */
     justify-self: center;
-    /* padding: 20px; */
-    
 }
 
 
 .spotlight {
     display: grid;
     grid-template-columns: 1fr;
-    /* gap: 1rem; */
 }
 
 .spotlight p{
-    /* display: grid; */
-    /* grid-template-columns: 1fr; */
-    /* gap: 1rem; */
+
     background-color:#eceeef;
 }
 
@@ -58,56 +51,6 @@ header {
 {
     background-color:#eceeef;
 }
-
-
-/*
-header button {
-    padding: 0.5rem 0.5rem;
-    border: none;
-    background-color: #36454f;
-    color: #fff;
-    font-size: 0.6rem;
-    cursor: pointer;
-}
-
-
-header button:hover {
-    background-color: #0056b3;
-}
-
-Dark mode styles
-.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-}
-
-.dark-mode header {
-    background-color: #1e1e1e;
-}
-
-.dark-mode .grid {
-    background-color: #1e1e1e;
-}
-
-.dark-mode nav {
-    background-color: #1e1e1e;
-}
-
-.dark-mode nav a {
-    color: #e0e0e0;
-}
-
-.dark-mode footer {
-    background-color: #1e1e1e;
-}
-
-.dark-mode header button {
-    background-color: #444;
-}
-
-.dark-mode header button:hover {
-    background-color: #222;
- } */
 
 
 .grid {
@@ -130,7 +73,6 @@ span {
 
 nav {
     display: block;
-    /* background-color: black; */
     margin: 0 auto;
     width: 100%;
     align-items: center;
@@ -161,7 +103,6 @@ a {
     text-decoration: none;
 }
 footer {
-    /* background-color: white; */
     color: #eceeef;
     display: grid;
     background-color: #36454f;

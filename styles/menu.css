@@ -39,7 +39,7 @@ nav {
 
 a:hover {
     color: gold;
-    /* font-weight: 700; */
+    transform: scale(1.1);
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
@@ -65,9 +65,4 @@ a:hover {
         transition: transform 0.3s ease-in-out;
     }
 
-    a:hover {
-        color: gold;
-        transform: scale(1.1);
-        font-weight: normal;
-    }
 }
