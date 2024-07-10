@@ -12,6 +12,43 @@ header {
 }
 
 
+
+.hero-wrapper {
+    margin-top: -17px;
+    position: relative;
+    background-image: url('../images/hero-img.jpg');
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 1263px;
+    height: 300px; /* Adjust this value to fit the screen height you desire */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.hero-cta {
+    text-align: right;
+}
+
+.hero-cta p {
+    padding-right: 150px;
+    color: beige;
+}
+
+.hero-cta p a {
+
+    color: beige;
+}
+
+.hero-wrapper h1 {
+    color: white; /* Adjust text color as needed */
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow to make the text more readable */
+    font-style: italic;
+}
+
+
 .section-wrap {
     display: grid;
     grid-template-columns: 1fr;
@@ -78,6 +115,10 @@ nav {
     align-items: center;
 }
 
+/* .menu a {
+    color: tomato;
+} */
+
 nav a {
     display: block;
     text-align: center;
@@ -86,6 +127,7 @@ nav a {
     color: #eceeef;
     text-decoration: none;
 }
+
 
 a:hover {
     color: gold;
