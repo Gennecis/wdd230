@@ -164,7 +164,43 @@ header button:hover {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    padding: 20px;
+    /* padding: 10px; */
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+#h2 {
+    color: indigo;
+}
+
+.temple-label {
+    font-size: larger;
+    font-weight: bold;
+    color: blue;
+}
+
+#activity {
+    background-color: #fff; /* White background for the card */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 16px; /* Padding inside the card */
+    margin: 16px; /* Margin around the card */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#information {
+    max-width: 400px;
+    background-color: #fff; /* White background for the card */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 16px; /*Padding inside the card*/
+    margin: 16px; /* Margin around the card */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 
 span {
@@ -195,6 +231,36 @@ a {
 
 a:hover, ul li a:hover {
     color: gold;
+}
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.temple-label {
+    position: absolute;
+}
+
+iframe {
+    position: relative;
+    width: 100%;
+}
+
+#visit-count {
+    font-size: small;
+}
+
+#visits {
+    margin: 0;
+    padding: 0;
+}
+
+#visits span {
+    margin: 0;
+    padding: 7px;
 }
 
 footer {

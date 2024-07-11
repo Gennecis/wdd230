@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/menu.css">
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/dark.js" defer></script>
+    <script src="scripts/getVisits.js"></script>
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Awka, Anambra State, Nigeria">
     <meta property="og:type" content="website">
@@ -23,7 +24,7 @@
 </head>
 <body>
     <header>
-        <img src="images/profile.png" alt="Pascal E. Okezie profile">
+        <img src="images/profile.png" alt="Pascal E. Okezie">
         <span>Pascal E. Okezie</span>
         <button id="dark-mode-toggle">Toggle Dark Mode</button>
     </header>
@@ -38,38 +39,51 @@
     </nav>
 
     <main>
+        <div class="hero">
+            <div class="temple-label">Adelaide, Australia Temple.</div>
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-img-small.webp">
+                <source media="(min-width: 960px)" srcset="images/hero-img-large.webp">
+                <img src="images/hero-img-large.webp" alt="Adelaide, Australia Temple.">
+            </picture>
+        </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="grid">
             <section class="card">
-                <h2 id="h2">Learning Activities</h2>
-                <ul>
-                    <li>Week 01:
-                        <a href="week01/media-query.html">Responsive Design: CSS Media Queries</a> |
-                        <a href="week01/holygrail.html">Page Layout Review</a>
-                    </li>
-                    <li>Week 02: 
-                        <a href="week02/design.html">Design Principles</a> |
-                        <a href="week02/DOM.html">DOM Manipulation</a> | 
-                        <a href="https://codepen.io/Gennecis/pen/GRbKabM">Responsive Hamburger Menu</a>
-                    </li>
-                    <li>Week 03: 
-                        <a href="week03/images/landscape.webp">WebP</a> | 
-                        <a href="week03/lazyload.html">Native Lazy Loading</a> |
-                        <a href="week03/responsive-images.html">Responsive Images</a> |
-                        <a href="week03/bom.html">Web Storage API</a>
-                    </li>
-                    <li>Week 04: <a href=""></a></li>
-                    <li>Week 05: <a href=""></a></li>
-                    <li>Week 06: <a href=""></a></li>
-                </ul>
+                <div id="activity">
+                    <h2 id="h2">Learning Activities</h2>
+                    <ul>
+                        <li>Week 01:
+                            <a href="week01/media-query.html">CSS Media Queries</a> |
+                            <a href="week01/holygrail.html">Page Layout Review</a>
+                        </li>
+                        <li>Week 02: 
+                            <a href="week02/design.html">Design Principles</a> |
+                            <a href="week02/DOM.html">DOM</a> | 
+                            <a href="https://codepen.io/Gennecis/pen/GRbKabM">Hamburger Menu</a>
+                        </li>
+                        <li>Week 03: 
+                            <a href="week03/images/landscape.webp">WebP</a> | 
+                            <a href="week03/lazyload.html">Lazy Loading</a> |
+                            <a href="week03/responsive-images.html">Responsive Images</a> |
+                            <a href="week03/bom.html">Web Storage API</a>
+                        </li>
+                        <li>Week 04: <a href=""></a></li>
+                        <li>Week 05: <a href=""></a></li>
+                        <li>Week 06: <a href=""></a></li>
+                    </ul>
+                </div>
             </section>
             <section class="card">
-                <h2>Information</h2>
-                <p id="weather-placeholder"></p>
-                <p id="visits-placeholder"></p>
+                <div id="information">
+                    <h2 id="h2">Information</h2>
+                    <p id="weather"></p>
+                    <p id="visits">Page visits:<span id="visit-count"></span></p>
+                </div>
             </section>
         </div>
     </main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7937.382319871016!2d6.835259000000001!3d5.898933!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1043bbdbd396292d%3A0x1beb41d04aba7fc6!2sOkija%20431125%2C%20Anambra!5e0!3m2!1sen!2sng!4v1720702164147!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p id="copyright"></p>
         <p id="lastModified"></p>
