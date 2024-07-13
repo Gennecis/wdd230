@@ -177,10 +177,27 @@ header button:hover {
     color: #121212;
 }
 
+
+.image-container {
+    position: relative;
+}
+
+.image-container .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: White;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+}
+
 .gallery img {
     width: 100%;
     height: auto;
 }
+
 
 /* Dark mode styles */
 .dark-mode {
