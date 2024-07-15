@@ -1,0 +1,32 @@
+table {
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    width: 500px;
+    height: 200px;
+}
+
+table {
+    border: 1px solid grey;
+}
+
+
+.table-caption {
+    font-size: larger;
+    background-color: black;
+  }
+
+
+
+  .col th:not(:empty) {
+    background-color: grey; 
+    padding: 10px;
+    text-align: center;
+}
+
+.cell {
+    background-color: white;
+    color: black;
+    border: 0.5px solid grey;
+    text-align: center;
+}
