@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pascal Okezie WDD 230 - Web Frontend Development - course assignment portal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pascal E. Okezie">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="../scripts/menu.js" defer></script>
+    <script src="../scripts/dark.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Awka, Anambra State, Nigeria">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.nairaland.com/attachments/10792482_sam8019_jpege4429d514c230f330a9b3c279744fb05">
+    <meta property="og:url" content="https://gennecis.github.io/wdd230/">
+    <title>Pascal - WDD 230 - Web Frontend Development</title>
+</head>
+<body>
+    <header>
+        <img src="images/profile.png" alt="Pascal E. Okezie">
+        <span>Pascal E. Okezie</span>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="chamber/index.html">Abeokuta Chamber of Commerce</a>
+        <a href="#">Site Plan</a>
+        <a href="#">Form</a>
+        <a href="week01/chamber-site-plan.html">Abeokuta Chamber of Commerce Site Plan</a>
+    </nav>
+
+    <main>
+        <form action="record.html" method="get" class="signUp">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <label for="username"> Username * <input type="text" name="uname" id="username" required> </label>
+                <label for="password"> Password * <input type="password" name="password" id="password" required pattern="[a-zA-Z0-9]{8,}"> </label>
+                <label for="confirmPassword"> Comfirm Password * <input type="password" name="confirmPassword" id="confirmPassword" required> </label>
+                <label for="email">Email * <input type="email" name="email" id="email" title="Please enter a valid email address" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu"></label>
+                <label for="pageRating">Rate this page <input type="number" name="pageRating" id="pageRating" min="1" max="10" step="1"><span id="ratingValue"></span></label>
+            </fieldset>
+            <input type="submit" value="Sign Up">
+            <p class="errorMessage"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+        <p>Pascal E. Okezie | Nigeria.</p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script>
+        document.querySelector(".signUp").addEventListener("submit", function(event){
+            event.preventDefault();
+            const password = document.querySelector("#password");
+            const confirmPassword = document.querySelector("#confirmPassword");
+            const errorMessage = document.querySelector(".errorMessage")
+            const passwordValue = password.value;
+            const confirmPasswordValue = confirmPassword.value;
+            if(passwordValue !== confirmPasswordValue) {
+                errorMessage.textContent = "Passwords do not match! Please try again.";
+                password.value = '';
+                confirmPassword.value = '';
+                password.focus();
+        }
+        else {
+            errorMessage.textContent ='';
+            event.target.submit();
+        }
+
+        });
+
+
+        const pageRating = document.querySelector("#pageRating");
+        const ratingValue = document.querySelector("#ratingValue");
+
+        pageRating.addEventListener("input", function() {
+            ratingValue.textContent = pageRating.value;
+        });
+
+        pageRating.addEventListener("change", function() {
+            ratingValue.textContent = pageRating.value;
+        });
+    </script>
+</body>
+</html>

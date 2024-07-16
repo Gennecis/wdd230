@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #007bff;
+    --font-family: 'Roboto', sans-serif;
+    --error-color: #dc3545;
+}
+
+body {
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.signUp fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.signUp legend {
+    color: #445ba9;
+    padding: 0% .5rem;
+}
+
+.signUp label {
+    display: block;
+    padding-top: 1rem;
+    color: red;
+    font-size: .9rem;
+}
+
+.signUp input[type="text"],
+.signUp input[type="password"],
+.signUp input[type="email"],
+.signUp input[type="number"] {
+    display: block;
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: .65rem;
+    color: grey;
+    width: 100%;
+    max-width: 270px;
+    appearance: none;
+}
+
+.signUp span {
+    font-size: large;
+}
+
+
+.signUp input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #fff;
+    border-radius: 6px;
+    width: 96%;
+    max-width: 390px;
+    padding: .8rem;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+.signUp input:required {
+    border-bottom: 8px solid red;
+}
+
+.signUp input:required:valid {
+    border-bottom: 8px solid green;
+}
+
+/* larger screen */
+@media screen and (min-width: 650px) {
+    .signUp input[type="text"],
+    .signUp input[type="password"],
+    .signUp input[type="email"],
+    .signUp input[type="number"] {
+        padding: .65rem;
+        color: grey;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .signUp input[type="submit"] {
+        width: 96%;
+        max-width: 420px;
+        padding: .8rem;
+        margin: -1rem 2% 2rem 2%;
+        box-shadow: 1px 1px 4px #999;
+    }
+}
