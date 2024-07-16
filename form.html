@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Pascal Okezie WDD 230 - Web Frontend Development - course assignment portal">
+    <meta name="description" content="sign up page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Pascal E. Okezie">
     <link rel="stylesheet" href="../styles/normalize.css">
@@ -20,7 +20,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.nairaland.com/attachments/10792482_sam8019_jpege4429d514c230f330a9b3c279744fb05">
     <meta property="og:url" content="https://gennecis.github.io/wdd230/">
-    <title>Pascal - WDD 230 - Web Frontend Development</title>
+    <title>sign up</title>
 </head>
 <body>
     <header>
@@ -46,7 +46,7 @@
                 <label for="password"> Password * <input type="password" name="password" id="password" required pattern="[a-zA-Z0-9]{8,}"> </label>
                 <label for="confirmPassword"> Comfirm Password * <input type="password" name="confirmPassword" id="confirmPassword" required> </label>
                 <label for="email">Email * <input type="email" name="email" id="email" title="Please enter a valid email address" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu"></label>
-                <label for="pageRating">Rate this page <input type="number" name="pageRating" id="pageRating" min="1" max="10" step="1"><span id="ratingValue"></span></label>
+                <label for="pageRating">Rate this page <input type="range" name="pageRating" id="pageRating" min="1" max="10" step="1"><span id="ratingValue"></span></label>
             </fieldset>
             <input type="submit" value="Sign Up">
             <p class="errorMessage"></p>

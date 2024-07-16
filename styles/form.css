@@ -31,7 +31,7 @@ body {
 .signUp input[type="text"],
 .signUp input[type="password"],
 .signUp input[type="email"],
-.signUp input[type="number"] {
+.signUp input[type="range"] {
     display: block;
     background-color: #fff;
     border: 1px solid grey;
@@ -72,7 +72,7 @@ body {
     .signUp input[type="text"],
     .signUp input[type="password"],
     .signUp input[type="email"],
-    .signUp input[type="number"] {
+    .signUp input[type="range"] {
         padding: .65rem;
         color: grey;
         width: 100%;
