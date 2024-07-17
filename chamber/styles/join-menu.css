@@ -1,0 +1,68 @@
+nav {
+    max-width: 100%;
+    margin: 1rem auto;
+}
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #36454f;
+    margin: auto;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gold;
+    transform: scale(1.1);
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+@media screen and (min-width: 600px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: auto;
+        width: 100%;
+        background-color: #36454f;
+    }
+
+    .navigation a {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+    }
+
+}

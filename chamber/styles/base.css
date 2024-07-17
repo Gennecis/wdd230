@@ -17,14 +17,11 @@ header {
     margin-top: -17px;
     position: relative;
     background-image: url('../images/hero-img.jpg');
-    background-size: cover; /* Ensures the image covers the container */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 1263px;
-    height: 300px; /* Adjust this value to fit the screen height you desire */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    height: 300px; 
 }
 
 .hero-cta {
@@ -42,9 +39,9 @@ header {
 }
 
 .hero-wrapper h1 {
-    color: white; /* Adjust text color as needed */
+    color: white;
     font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow to make the text more readable */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-style: italic;
 }
 
