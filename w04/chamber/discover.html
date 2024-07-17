@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pascal Okezie WDD 230 - Web Frontend Development - course assignment portal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pascal E. Okezie">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/discover-base.css">
+    <link rel="stylesheet" href="styles/discover-larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/discover-menu.css">
+    <script src="../scripts/menu.js" defer></script>
+    <script src="../scripts/dark.js" defer></script>
+    <script src="scripts/getVisits.js" defer></script>
+    <script src="scripts/getWeather.js" defer></script>
+    <link rel="icon" href="../favicon.ico">
+    <meta property="og:title" content="Awka, Anambra State, Nigeria">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.nairaland.com/attachments/10792482_sam8019_jpege4429d514c230f330a9b3c279744fb05">
+    <meta property="og:url" content="https://gennecis.github.io/wdd230/">
+    <title>Pascal - WDD 230 - Chamber of Commerce Discover Page</title>
+</head>
+<body>
+    <header>
+        <img src="../images/profile.png" alt="Pascal E. Okezie">
+        <span>Pascal E. Okezie</span>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="chamber/index.html">Abeokuta Chamber of Commerce</a>
+        <a href="#">Site Plan</a>
+        <a href="#">Form</a>
+        <a href="week01/chamber-site-plan.html">Abeokuta Chamber of Commerce Site Plan</a>
+    </nav>
+
+    <main>
+        <h1>The Chamber of Commerce Discover Page</h1>
+        <div class="container">
+            <aside class="sidebar">
+                <h2 id="h2">Information</h2>
+                <div class="card">
+                    <p id="visits">Page visits:<span id="visit-count"></span></p>
+                </div>
+
+                <div class="card">
+                    <div id="information">
+                        <p id="weather">Weather<br> <span id="weather-info"></span></p>
+                    </div>
+                </div>
+
+                <section class="card">
+                    <div>
+                        <h3>Know the city</h3>
+                        <p>Historical Significance: Abeokuta, meaning "under the rock" in Yoruba, was founded in 1830. It served as a refuge from slave hunters and was established by people escaping from the Oyo Empire. The city's rocky landscape provided natural fortification.<br><br>
+
+                            Geography: The city is situated on the east bank of the Ogun River and is surrounded by large granite rocks, including the famous Olumo Rock, which has historical and cultural significance.<br><br>
+                            
+                            Economy: Abeokuta is a significant trade center for agricultural products like rice, yams, cassava, maize, cotton, and palm oil. It also has industries such as fruit canning, plastics, breweries, sawmills, and an aluminum products factory.<br><br>
+                            
+                            Cultural Heritage: The city is known for its rich Yoruba culture, with traditional festivals, arts, and crafts, including the famous Adire textile (tie and dye) industry.<br><br>
+                            
+                            Landmarks: Key landmarks include Olumo Rock, which has ancient caves and shrines, the Centenary Hall, and the Ake Palace, the traditional home of the Alake, the paramount ruler of Egbaland.<br><br>
+                            
+                            Education: Abeokuta hosts several educational institutions, including the Federal University of Agriculture and several secondary and primary schools.<br><br>
+                            
+                            Population: As of recent estimates, the city's population is about 600,000, with a mix of various ethnic groups, though predominantly Yoruba.
+                        </p>
+                    </div>
+                </section>
+            
+                <section class="card">
+                    <div>
+                        <h3>Demographics</h3>
+                        <p>Population: 589,000</p>
+                        <p>Age Distribution: 0-14 years: Approximately 43% of the population<br>
+                            15-24 years: Around 19%<br>
+                            25-54 years: About 30%<br>
+                            55-64 years: Roughly 4%<br>
+                            65 years and older: Approximately 4%
+                        </p>
+                    </div>
+                </section>
+            
+                <section class="card">
+                    <div>
+                        <h3>Tourist Attractions</h3>
+                        <ul>
+                            <li><strong>Olumo Rock:</strong> This iconic natural fortress is a must-visit. It offers stunning views of the city and has historical significance as a refuge for the Egba people during wars.</li>
+                            <li><strong>Ake Palace::</strong> A historical site that provides a glimpse into the traditional royalty of the Egba people.</li>
+                            <li><strong>Adire Market:</strong> Known for its vibrant display of Adire (tie-dyed) fabrics, this market is a great place to experience local crafts and culture.</li>
+                            <li><strong>Olusegun Obasanjo Presidential Library:</strong> This library and museum offer insights into the life and times of Nigeria’s former president, Olusegun Obasanjo.</li>
+                            <li><strong>Centenary Hall:</strong> Built to commemorate 100 years of peace in Abeokuta, this hall is an architectural marvel and a significant historical site.</li>
+                            <li><strong>OOPL Wildlife Park:</strong> Located within the Olusegun Obasanjo Presidential Library complex, this park is home to various wildlife species and offers a family-friendly environment.</li>
+                            <li><strong>Itoku Market:</strong> Another bustling market known for its pottery and crafts, providing a unique shopping experience.</li>
+                        </ul>
+                    </div>
+                </section>
+            
+                <section class="card">
+                    <div>
+                        <h2>Local Businesses</h2>
+                        <ul>
+                            <li><strong>Apex Paints:</strong> Provides services in the production and supply of quality paints and coatings.</li>
+                            <li><strong>Fatgbems Group of Companies:</strong>  A conglomerate involved in petroleum marketing and tyre trading.</li>
+                            <li><strong>Dartom Chemicals Enterprise:</strong> Deals in household chemicals like laundry agents, liquid soap, and air.</li>
+                        </ul>
+                    </div>
+                </section>
+            </aside>
+            <section class="main-content">
+                <div class="gallery">
+                    <div class="image-container">
+                        <img src="images/abk3.jpg" alt="" loading="lazy">
+                        <h3 class="caption">A huge rock on Olumo rock</h3>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="images/abk2.jpg" alt="" loading="lazy">
+                        <h3 class="caption">Olumo Rock, Abeokuta.</h3>
+                    </div>
+                    
+                    <div class="image-container">
+                        <img src="images/abk5.jpg" alt="" loading="lazy">
+                        <h3 class="caption">Tourists at the Olumo rock</h3>
+                    </div>
+                    
+                    <div class="image-container">
+                        <img src="images/abk6.jpg" alt="" loading="lazy">
+                        <h3 class="caption">Oyan river dam, Abeokuta.</h3>
+                    </div>
+
+
+                    <div class="image-container">    
+                        <img src="images/abk7.jpg" alt="" loading="lazy">
+                        <h3 class="caption">A tourist at the Oyan river dam</h3>
+                    </div>
+
+                    <div class="image-container">    
+                        <img src="images/abk9.jpg" alt="" loading="lazy">
+                        <h3 class="caption">Lafenwa market, Abeokuta.</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126676.53382438592!2d3.2775731216213284!3d7.1673550467828075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a4bf6995dfc7f%3A0x6734fcf62892478d!2sAbeokuta%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1720836315486!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+        <p>Pascal E. Okezie | Nigeria.</p>
+    </footer>
+    <script src="../scripts/getDates.js"></script>
+</body>
+</html>

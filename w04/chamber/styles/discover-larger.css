@@ -1,0 +1,43 @@
+@media screen and (min-width: 700px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+
+    a:hover, ul li a:hover {
+        color: gold;
+    }
+
+    .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    /* max-height: 80vh; 
+    overflow-y: auto; */
+}
+
+.main-content {
+    overflow-y: auto;
+}
+
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+        gap: 10px;
+    }
+
+    .gallery img {
+        /* width: 650px; */
+        /* height: auto; */
+        transition: transform 0.3s ease;
+    }
+    
+
+    .gallery img:hover {
+        transform: scale(0.9);
+    }
+}
