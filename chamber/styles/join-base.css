@@ -394,24 +394,5 @@ body {
         grid-template-columns: 1fr 1fr;
         gap: 4rem;
     }
-
-
-    /* .membership-benefits {
-        text-align: center;
-        padding: 2rem; 
-        box-sizing: border-box;
-        border: 1px solid beige;
-    } */
-
-
-    /* .membership-benefits {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .membership-card {
-        flex: 1 1 calc(50% - 20px);
-        margin-bottom: 20px;
-    } */
     
 }
