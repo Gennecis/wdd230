@@ -194,6 +194,7 @@ h1 {
 
 #information {
     max-width: 400px;
+    text-align: center;
     background-color: #fff; /* White background for the card */
     border: 1px solid #ddd; /* Light grey border */
     border-radius: 8px; /* Rounded corners */
@@ -202,6 +203,12 @@ h1 {
     margin: 16px; /* Margin around the card */
     transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
+
+#weather-info, #visit-count, figure figcaption {
+    text-align: center;
+} 
+
+
 
 span {
     padding-left: 2rem;
@@ -242,6 +249,13 @@ a:hover, ul li a:hover {
 
 .temple-label {
     position: absolute;
+    color: gold;
+    bottom: 5%;
+    left: 44%;
+    right: 0;
+    font: "Pacifico", sans-serif;
+    font-size: 1rem;
+    font-style: italic;
 }
 
 iframe {

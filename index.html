@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="styles/menu.css">
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/dark.js" defer></script>
-    <script src="scripts/getVisits.js"></script>
+    <script src="scripts/getVisits.js" defer></script>
+    <script src="scripts/getWeather.js" defer></script>
+    <script src="scripts/links.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Awka, Anambra State, Nigeria">
     <meta property="og:type" content="website">
@@ -40,11 +42,11 @@
 
     <main>
         <div class="hero">
-            <div class="temple-label">Adelaide, Australia Temple.</div>
+            <div class="temple-label">Aba, Nigeria Temple.</div>
             <picture>
                 <source media="(max-width: 400px)" srcset="images/hero-img-small.webp">
                 <source media="(min-width: 960px)" srcset="images/hero-img-large.webp">
-                <img src="images/hero-img-large.webp" alt="Adelaide, Australia Temple.">
+                <img src="images/hero-img-large.webp" alt="Aba, Nigeria Temple.">
             </picture>
         </div>
         <h1>WDD 230: Web Frontend Development</h1>
@@ -52,45 +54,17 @@
             <section class="card">
                 <div id="activity">
                     <h2 id="h2">Learning Activities</h2>
-                    <ul>
-                        <li>Week 01:
-                            <a href="week01/media-query.html">CSS Media Queries</a> |
-                            <a href="week01/holygrail.html">Page Layout Review</a>
-                        </li>
-                        <li>Week 02: 
-                            <a href="week02/design.html">Design Principles</a> |
-                            <a href="week02/DOM.html">DOM</a> | 
-                            <a href="https://codepen.io/Gennecis/pen/GRbKabM">Hamburger Menu</a>
-                        </li>
-                        <li>Week 03: 
-                            <a href="week03/images/landscape.webp">WebP</a> | 
-                            <a href="week03/lazyload.html">Lazy Loading</a> |
-                            <a href="week03/responsive-images.html">Responsive Images</a> |
-                            <a href="week03/bom.html">Web Storage API</a> |
-                            <a href="chamber/discover.html">Discover</a>
-                        </li>
-                        <li>Week 04: 
-                            <a href="https://codepen.io/Gennecis/pen/KKjpGva">Pseudo-Classes (Pen)</a> |
-                            <a href="week04/images/exercise_3.jpg">combinator exercises</a> | 
-                            <a href="week04/form-start/Form-start/index.html">HTML Forms</a> |
-                            <a href="form.html">sign up</a> | 
-                            <a href="chamber/join.html"> Join the Chamber of Commerce</a>
-                        </li>
-
-                        <li>
-                            Week 05: 
-                            <a href="https://codepen.io/Gennecis/pen/poXgEKm">Pseudo-elements codepen</a> |
-                            <a href="week05/new-ward-members.json">json</a> |
-                            <a href="week05/prophets.html">The Fetch API</a>
-                        </li>
-                        <li>Week 06: <a href=""></a></li>
-                    </ul>
+                    <ul></ul>
                 </div>
             </section>
             <section class="card">
                 <div id="information">
                     <h2 id="h2">Information</h2>
-                    <p id="weather"></p>
+                    <p id="weather">Weather<br><span id="weather-info"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                      </figure>
                     <p id="visits">Page visits:<span id="visit-count"></span></p>
                 </div>
             </section>

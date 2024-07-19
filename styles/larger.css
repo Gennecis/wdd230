@@ -20,8 +20,13 @@
 
 
     #information {
-        max-width: 200px;
-        height: 200px;
+        max-width: 300px;
+        height: 250px;
+        text-align: center;
     }
+
+    #weather-info, #visit-count, figure figcaption {
+        text-align: center;
+    } 
 
 }

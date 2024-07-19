@@ -1,0 +1,102 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "week01/media-query.html",
+            "title": "CSS Media Queries"
+          },
+          {
+            "url": "week01/holygrail.html",
+            "title": "Page Layout Review"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week02/design.html",
+            "title": "Design Principles"
+          },
+          {
+            "url": "week02/DOM.html",
+            "title": "DOM"
+          },
+          {
+            "url": "https://codepen.io/Gennecis/pen/GRbKabM",
+            "title": "Hamburger Menu"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "week03/images/landscape.webp",
+            "title": "WebP"
+          },
+          {
+            "url": "week03/lazyload.html",
+            "title": "Lazy Loading"
+          },
+          {
+            "url": "week03/responsive-images.html",
+            "title": "Responsive Images"
+          },
+          {
+            "url": "week03/bom.html",
+            "title": "Web Storage API"
+          },
+          {
+            "url": "chamber/discover.html",
+            "title": "Discover"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "https://codepen.io/Gennecis/pen/KKjpGva",
+            "title": "Pseudo-Classes (Pen)"
+          },
+          {
+            "url": "week04/images/exercise_3.jpg",
+            "title": "Combinator Exercises"
+          },
+          {
+            "url": "week04/form-start/Form-start/index.html",
+            "title": "HTML Forms"
+          },
+          {
+            "url": "form.html",
+            "title": "Sign Up"
+          },
+          {
+            "url": "chamber/join.html",
+            "title": "Join the Chamber of Commerce"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url": "https://codepen.io/Gennecis/pen/poXgEKm",
+            "title": "Pseudo-elements CodePen"
+          },
+          {
+            "url": "week05/new-ward-members.json",
+            "title": "JSON Example"
+          },
+          {
+            "url": "week05/prophets.html",
+            "title": "The Fetch API"
+          }
+        ]
+      }
+    ]
+  }
+  
