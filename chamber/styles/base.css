@@ -154,7 +154,7 @@ footer {
 .directory-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 10px;
 }
 
 /* For List View */
@@ -177,6 +177,8 @@ footer {
 
 .directory-item img {
     width: 100%; /* Ensures images take full width of the container */
+    max-width: 400px;
+    object-fit: cover; /* Ensures images maintain their aspect ratio */
     height: auto; /* Maintains aspect ratio */
     max-height: 200px; /* Limits the image height */
 }
