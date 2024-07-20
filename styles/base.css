@@ -172,7 +172,7 @@ h1 {
     color: black;
 }
 
-#h2 {
+.h2 {
     color: indigo;
 }
 
@@ -258,7 +258,7 @@ a:hover, ul li a:hover {
     bottom: 5%;
     left: 44%;
     right: 0;
-    font: "Pacifico", sans-serif;
+    font-family: "Pacifico", sans-serif;
     font-size: 1rem;
     font-style: italic;
 }
