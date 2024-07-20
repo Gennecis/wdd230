@@ -149,52 +149,20 @@ footer {
 
 
 /*.............The Directory Page.............*/
-
 /* For Grid View */
 .directory-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-}
-
-/* For List View */
-.directory-list {
+    gap: 20px;
+  }
+  
+  /* For List View */
+  .directory-list {
     display: block;
-}
-
-.directory-list .directory-item {
-    padding: 20px;
-    background-color: #f9f9f9; /* Light grey background for better differentiation */
-    margin-bottom: 10px; /* Adds space between list items */
-}
-
-/* Common Styles */
-.directory-item {
+  }
+  
+  /* Common Styles */
+  .directory-item {
     border: 1px solid #ccc;
     padding: 10px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
-}
-
-.directory-item img {
-    width: 100%; /* Ensures images take full width of the container */
-    max-width: 400px;
-    object-fit: cover; /* Ensures images maintain their aspect ratio */
-    height: auto; /* Maintains aspect ratio */
-    max-height: 200px; /* Limits the image height */
-}
-
-/* Hover Effects */
-.directory-item:hover {
-    transform: translateY(-5px); /* Slightly raises the item */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 600px) {
-    .directory-grid {
-        grid-template-columns: 1fr; /* Stacks items vertically on smaller screens */
-    }
-    .directory-item img {
-        max-height: 150px; /* Smaller image size for smaller screens */
-    }
-}
+  }
