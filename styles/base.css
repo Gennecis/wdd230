@@ -176,26 +176,31 @@ h1 {
     color: indigo;
 }
 
-.temple-label {
+/* .temple-label {
     font-size: larger;
     font-weight: bold;
     color: blue;
-}
+} */
 
 #activity {
-    background-color: #fff; /* White background for the card */
+    color: black;
+    background-color: white; /* White background for the card */
     border: 1px solid #ddd; /* Light grey border */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    padding: 16px; /* Padding inside the card */
-    margin: 16px; /* Margin around the card */
+    padding: 10px; /* Padding inside the card */
+    margin: 10px; /* Margin around the card */
     transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#activity {
+    text-align: center;
 }
 
 #information {
     max-width: 400px;
     text-align: center;
-    background-color: #fff; /* White background for the card */
+    background-color: white; /* White background for the card */
     border: 1px solid #ddd; /* Light grey border */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */

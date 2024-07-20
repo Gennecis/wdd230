@@ -25,6 +25,14 @@
         text-align: center;
     }
 
+    #activity {
+        max-width: 600px;
+        height: 500px;
+        text-align: center;
+    }
+
+
+
     #weather-info, #visit-count, figure figcaption {
         text-align: center;
     } 
