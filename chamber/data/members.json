@@ -1,0 +1,64 @@
+[
+    {
+        "name": "Halaga Catering & Events Services",
+        "address": "Mercy Rd, Panseke, Abeokuta 111102, Ogun State",
+        "phone": "+2348 03040 1400",
+        "url": "NA",
+        "image": "../images/halaga.jpg",
+        "membership level": ""
+    },
+
+    {
+        "name": "Superfoods",
+        "address": "NUT Junction, opp. Legislative qrts, Ibara Housing Estate Rd, Ibara, Abeokuta, Ogun State",
+        "phone": " 09079799722",
+        "url": "NA",
+        "image": "../images/superfoods.jpg",
+        "membership level": ""
+    },
+
+    {
+        "name": "Apex Paints",
+        "address": "Km 8, Abeokuta-Lagos Road, P. O. Box 2073,Abeokuta,",
+        "phone": " 08129008255",
+        "url": "http://www.apexpaints.com",
+        "image": "../images/apex.jpg",
+        "membership level": ""
+    },
+
+    {
+        "name": "Fatgbems Group of Companies",
+        "address": "100 Abeokuta-Ibadan Rd, Abeokuta 111101, Ogun State",
+        "phone": "08033007438",
+        "url": "https://www.fatgbemspetroleum.com/",
+        "image": "../images/fatgbems.jpg",
+        "membership level": ""
+    },
+
+    {
+        "name": "Goodwill Ceramic Limited",
+        "address": "GUANGDONG FSZ112102,AGBARA, NIGERIA, Abeokuta, Ogun",
+        "phone": "07081651573",
+        "url": "goodwillceramiclimited.com.ng",
+        "image": "../images/goodwill.jpg",
+        "membership level": ""
+    },
+
+    {
+        "name": "Onimoto Automobile Services",
+        "address": "2 Old Igboora Road, opp Ogun state water Work, Arakanga., Abeokuta, Ogun, Nigeria",
+        "phone": "08104696436",
+        "url": "www.facebook.com/Onimoto.ng",
+        "image": "../images/onimoto-automobile-services.jpg",
+        "membership level": ""
+    },
+
+    {
+        "name": "OOPL",
+        "address": "49G7+7JM, Presidential Boulevard, Oke Mosan, Abeokuta 110118, Ogun State",
+        "phone": "08097240000",
+        "url": "https://oopl.org.ng/",
+        "image": "../images/oopl.jpg",
+        "membership level": ""
+    }
+]
