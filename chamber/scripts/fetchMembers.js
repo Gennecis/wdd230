@@ -11,21 +11,27 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = await response.json();
         
         const directoryContainer = document.querySelector('.directory-container');
+        // Adding feedback for data loading
+        directoryContainer.innerHTML = '<p>Loading...</p>';
+        
         data.forEach(member => {
           const memberItem = document.createElement('div');
           memberItem.classList.add('directory-item');
           memberItem.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name}">
+            <img src="${member.image}" alt="${member.name}">
             <h3>${member.name}</h3>
             <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <a href="${member.website}">${member.website}</a>
+            <a href="tel:${member.phone}">${member.phone}</a>
+            <a href="${member.url}" target="_blank">${member.url}</a>
             <p>${member.membership_level}</p>
           `;
           directoryContainer.appendChild(memberItem);
         });
+        // Remove loading message after data is loaded
+        directoryContainer.innerHTML = '';
       } catch (error) {
         console.error('Error fetching the member data:', error);
+        directoryContainer.innerHTML = '<p>Error loading data. Please try again later.</p>';
       }
     };
 
