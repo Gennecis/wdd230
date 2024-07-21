@@ -150,19 +150,23 @@ footer {
 
 /*.............The Directory Page.............*/
 /* For Grid View */
+  
 .directory-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-  }
-  
+    padding: 10px;
+    margin: auto;
+    width: calc(100% - 20px);
+}
+
   /* For List View */
-  .directory-list {
+.directory-list {
     display: block;
   }
   
   /* Common Styles */
-  .directory-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
+.directory-item {
+border: 1px solid #ccc;
+padding: 10px;
+}
