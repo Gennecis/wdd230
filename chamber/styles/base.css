@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     margin: auto;
     font-family: "Roboto", sans-serif;
@@ -149,35 +156,63 @@ footer {
 
 
 /*.............The Directory Page.............*/
-/* For Grid View */
-  
-/* .directory-grid {
+main {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 700px;
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.menu {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #bed;
+    text-align: center;
+}
+
+.menu button {
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.directory-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    padding: 10px;
-    margin: auto;
-    width: calc(100% - 20px);
-} */
-
-
-.directory-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 50px;
-    padding: 60px;
-    margin: auto;
-    margin-left: -260px;
-    width: calc(100% - 20px);
+    align-items: center;
 }
 
-  /* For List View */
-.directory-list {
-    display: block;
-  }
-  
-  /* Common Styles */
-/* .directory-item {
-border: 1px solid #ccc;
-padding: 10px;
-} */
+.directory-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #eee;
+    text-align: center;
+}
+
+.directory-item img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px #333;
+}
+
+.directory-item h3, .directory-item p, .directory-item a {
+    margin: 0.1rem;
+}
+
+.directory-container.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.directory-container.list .directory-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.directory-container.list .directory-item img {
+    display: none;
+}

@@ -5,7 +5,7 @@
         "phone": "+2348 03040 1400",
         "url": "NA",
         "image": "../images/halaga.jpg",
-        "membership level": ""
+        "membership_level": ""
     },
 
     {
@@ -14,7 +14,7 @@
         "phone": " 09079799722",
         "url": "NA",
         "image": "../images/superfoods.jpg",
-        "membership level": "Silver"
+        "membership_level": "Silver"
     },
 
     {
@@ -23,7 +23,7 @@
         "phone": " 08129008255",
         "url": "http://www.apexpaints.com",
         "image": "../images/apex.jpg",
-        "membership level": "Bronze"
+        "membership_level": "Bronze"
     },
 
     {
@@ -32,7 +32,7 @@
         "phone": "08033007438",
         "url": "https://www.fatgbemspetroleum.com/",
         "image": "../images/fatgbems.jpg",
-        "membership level": "Gold"
+        "membership_level": "Gold"
     },
 
     {
@@ -41,7 +41,7 @@
         "phone": "07081651573",
         "url": "https://www.goodwillceramiclimited.com.ng",
         "image": "../images/goodwill.jpg",
-        "membership level": "Silver"
+        "membership_level": "Silver"
     },
 
     {
@@ -50,7 +50,7 @@
         "phone": "08104696436",
         "url": "www.facebook.com/Onimoto.ng",
         "image": "../images/onimoto-automobile-services.jpg",
-        "membership level": "Bronze"
+        "membership_level": "Bronze"
     },
 
     {
