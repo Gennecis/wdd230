@@ -59,6 +59,6 @@
         "phone": "08097240000",
         "url": "https://oopl.org.ng/",
         "image": "../images/oopl.jpg",
-        "membership level": "Gold"
+        "membership_level": "Gold"
     }
 ]
