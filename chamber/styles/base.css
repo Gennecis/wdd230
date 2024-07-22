@@ -1,8 +1,8 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 
 body {
@@ -174,14 +174,21 @@ main {
 
 .menu button {
     padding: 1rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .directory-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+    padding: 20px;
     align-items: center;
+    font-size: small;
+}
+
+.directory-container a {
+    font-size: smaller;
+    font-weight: lighter;
 }
 
 .directory-item {
@@ -190,6 +197,7 @@ main {
     background-color: #eee;
     text-align: center;
 }
+
 
 .directory-item img {
     max-width: 100%;
@@ -209,10 +217,23 @@ main {
 .directory-container.list .directory-item {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
     margin: 0;
     padding: 0.25rem;
 }
 
 .directory-container.list .directory-item img {
     display: none;
+}
+
+
+/* ----------event banner styles--------------- */
+.event-section button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: #f44336; /* Red color for the close button */
+    color: white;
+    border: none;
+    cursor: pointer;
 }

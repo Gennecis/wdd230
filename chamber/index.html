@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="styles/larger.css">
 <link rel="stylesheet" href="styles/menu.css">
 <script src="scripts/menu.js" defer></script>
+<script src="scripts/homeWeather.js" defer></script>
+<script src="scripts/spotLight.js" defer></script>
 <meta property="og:title" content="">
 <meta property="og:type" content="">
 <meta property="og:image" content="">
@@ -38,28 +40,32 @@
     <main>
         <div id="main">
             <div class="section-wrap">
-                <div>
-                    <h3>Event</h3>
+                <div id="event-banner" class="event-section">
+                    <h3>Chamber of Commerce Event</h3>
                     <section class="current-event">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, est maiores. Assumenda nulla, ducimus cum officia illum aperiam accusantium vero.</p>
+                        <p>Join us for a Meet and Greet on Wednesday at 7:00 PM!</p>
+                        <button onclick="closeBanner()">Close</button>
                     </section>
                 </div>
+                
 
-                <div>
-                    <h3>Weather</h3>
-                    <section class="weather">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto enim sint eligendi voluptatum eius deserunt qui cupiditate quis facere fuga!</p>
-                    </section>
-                </div>
+                <section class="card">
+                    <div id="information">
+                        <h2 class="h2">Weather Information</h2>
+                        <p id="weather">Current Weather<br><span id="weather-info"></span></p>
+                        <figure>
+                            <img id="weather-icon" src="#" alt="Weather icon">
+                            <figcaption></figcaption>
+                        </figure>
+                        <h4>3-Day Forecast</h4>
+                        <ul id="forecast-list"></ul>
+                    </div>
+                </section>
             </div>
             <div class="spotlight-wrapper">
-                <h3>Member Sportlight</h3>
+                <h3>Member Spotlight</h3>
                 <section id="spotlight">
-                    <div class="spotlight">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore possimus accusamus, mollitia deserunt ullam a cumque corporis repellendus non recusandae totam consequatur, blanditiis doloremque, sequi dolorem doloribus nisi error dolore?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat magnam delectus mollitia dicta ad deleniti aut sunt saepe aspernatur. Voluptatem necessitatibus cum rerum eum id eligendi sed incidunt nobis?</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora minima, nam sapiente repudiandae dolores deserunt temporibus inventore quam sequi quo dolorem quaerat rem vel ratione quasi culpa porro labore aliquid!</p>
-                    </div>
+                    <!-- Dynamic spotlight members will be displayed here -->
                 </section>
             </div>
         </div>
