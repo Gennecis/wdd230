@@ -4,10 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
     async function fetchMembers() {
         const baseURL = 'https://gennecis.github.io/wdd230/chamber/';
         const linksURL = baseURL + 'data/members.json';
+
         try {
             const response = await fetch(linksURL);
             const members = await response.json();
-            // console.log(members);
+            // console.log('members:', members);
             displaySpotlightMembers(members);
         } catch (error) {
             console.error('Error fetching member data:', error);
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const spotlightMembers = filterSpotlightMembers(members);
         const selectedMembers = selectRandomMembers(spotlightMembers, 3); // Selects 3 random members for display
 
+        spotlightContainer.innerHTML = ''; // Clear existing content
         selectedMembers.forEach(member => {
             const memberElement = createMemberElement(member);
             spotlightContainer.appendChild(memberElement);
@@ -26,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function filterSpotlightMembers(members) {
-        return members.filter(member => member.membership_level === 'silver' || member.membership_level === 'gold');
+        return members.filter(member => member.membership_level === 'Silver' || member.membership_level === 'Gold');
     }
 
     function selectRandomMembers(members, count) {
@@ -36,11 +38,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function createMemberElement(member) {
         const element = document.createElement('div');
-        element.className = 'spotlight';
+        element.className = 'spotlight-member';
         element.innerHTML = `
             <h4>${member.name}</h4>
-            <p>${member.description || 'No additional information available'}</p>
-            <a href="${member.website}">Visit Website</a>
+            <p>${member.address}</p>
+            <a href="${member.url === 'NA' ? '#' : member.url}" target="_blank">Visit Website</a>
         `;
         return element;
     }
