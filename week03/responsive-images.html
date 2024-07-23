@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="">
+<meta name="description" content="WDD 230 - Responsive Images">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="">
+<meta name="author" content="Pascal E. Okezie">
+<link rel="stylesheet" href="../styles/normalize.css">
 <link rel="stylesheet" href="styles/responsive-images.css">
-<title>Responsive Images</title>
+<title>WDD 230 - Responsive Images</title>
 </head>
 <body>
     <header>
@@ -16,9 +17,9 @@
     <main>
         <div class="hero">
             <picture>
-                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
-                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
-                <img src="images/hero-large.webp" width="1500" height="750" alt="Aba temple">
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp" loading="lazy">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp" loading="lazy">
+                <img src="images/hero-large.webp" width="1500" height="750" alt="Aba temple" loading="lazy">
             </picture>
         </div>
     </main>

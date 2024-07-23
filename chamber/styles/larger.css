@@ -1,11 +1,4 @@
-@media screen and (min-width: 600px) {
-    
-    
-    /* .hero-image {
-        grid-template-columns: 1fr 1fr; 
-    } */
-
-
+@media screen and (min-width: 550px) {
     .section-wrap {
         grid-template-columns: 1fr 1fr;
     }
@@ -34,19 +27,8 @@
 
     .hero-wrapper {
         padding-top: 180px;
-        width: 1263px;
+        /* width: 100%; */
+        width: 1280px;
+        height: auto;
     }
-
-
-    /* .hero-cta {
-        position: absolute;
-        bottom: 2px;
-        left: 10px;
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-        color: white;
-        box-sizing: border-box;
-    } */
-
 }

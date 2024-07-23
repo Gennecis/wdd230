@@ -7,7 +7,7 @@
 
 /* Body styling for overall page aesthetics */
 body {
-    margin: auto;
+    margin: 0% auto;
     font-family: "Roboto", sans-serif;
     background-color: white;
 }
@@ -28,8 +28,9 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 70px;
-    width: 368px;
+    padding: 40px;
+    padding-top: 200px;
+    width: 313px;
 }
 
 
@@ -181,7 +182,7 @@ nav a {
     color: indigo;
 }
 
-#information h2 {
+#information h3 {
     color: black;
     padding: 10px;
 }
@@ -263,7 +264,7 @@ footer {
 .event-section button {
     padding: 5px 10px;
     margin-top: 10px;
-    background-color: black; /* Red color for the close button */
+    background-color: black; 
     color: white;
     border: none;
     cursor: pointer;

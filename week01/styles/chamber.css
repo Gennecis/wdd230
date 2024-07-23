@@ -1,5 +1,5 @@
 body {
-    background-color: White;
+    background-color: white;
     font-family: "Roboto", sans-serif;
     color: black;
     margin: 0 auto;
@@ -7,14 +7,14 @@ body {
 
 header {
     display: grid;
-    background-color:indigo;
-    color: white;
+    background-color:beige;
+    color: black;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: indigo;
+    background-color: #36454F;
 }
 
 main {
@@ -23,7 +23,9 @@ main {
 
 a {
     color: white;
-    text-decoration: none;
+}
+.wireframe a {
+    color: indigo;
 }
 
 a:hover {
@@ -31,7 +33,7 @@ a:hover {
 }
 
 footer {
-    background-color: indigo;
+    background-color: #36454F;
     display: grid;
     gap: 1rem;
     color:white;

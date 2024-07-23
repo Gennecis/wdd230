@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/join-menu.css">
     <script src="../scripts/menu.js" defer></script>
     <script src="../scripts/dark.js" defer></script>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
     <meta property="og:title" content="Awka, Anambra State, Nigeria">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.nairaland.com/attachments/10792482_sam8019_jpege4429d514c230f330a9b3c279744fb05">
@@ -32,10 +32,9 @@
     <button id="menu"></button>
     <nav class="navigation">
         <a href="index.html">Home</a>
-        <a href="chamber/index.html">Abeokuta Chamber of Commerce</a>
-        <a href="#">Site Plan</a>
-        <a href="#">Form</a>
-        <a href="week01/chamber-site-plan.html">Abeokuta Chamber of Commerce Site Plan</a>
+        <a href="../week01/chamber-site-plan.html">Site Plan</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
     </nav>
 
     <main class="grid-wrapper">
@@ -71,12 +70,12 @@
             </div>
         </aside>
         <form action="thankyou.html" class="join">
-            <h1>Join Us</h1>
+            <h3>Join Us</h3>
             <fieldset>
                 <legend>Applicant Details</legend>
                 <label for="fname"> First Name <input type="text" name="fname" id="fname" required> </label>
                 <label for="lname"> Last name <input type="text" name="lname" id="lname" required> </label>
-                <label for="position"> Position <input type="text" name="position" id="position" pattern="^[A-Za-z\s-]{7,}$"></label>
+                <label for="position"> Position <input type="text" name="position" id="position" pattern="^[a-zA-Z\s\-]{7,}$"></label>
                 <label for="email">Email <input type="email" name="email" id="email" placeholder="example@gmail.com" required></label>
                 <label for="phone"> Phone <input type="tel" name="phone" id="phone" required></label>
             </fieldset>
@@ -93,7 +92,7 @@
                 <label for="bronze-level"> <input type="radio" name="level" id="bronze-level" required> Bronze Membership </label>
                 <label for="silver-level"> <input type="radio" name="level" id="silver-level" required> Silver Membership </label>
                 <label for="gold-level"> <input type="radio" name="level" id="gold-level" required> Gold Membership </label>
-                <label> Date loaded <input type="hidden" name="timestamp" id="timestamp"> </label>
+                <input type="hidden" name="timestamp" id="timestamp">
             </fieldset>
 
             <input type="submit" name="submit" id="submit" value="Submit Application">
