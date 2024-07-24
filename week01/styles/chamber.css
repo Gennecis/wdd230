@@ -20,9 +20,12 @@ nav {
 main {
     color: black;
 }
+.color-pallete a {
+    color: indigo;
+}
 
 a {
-    color: white;
+    color: beige;
 }
 .wireframe a {
     color: indigo;
