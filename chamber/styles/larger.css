@@ -28,7 +28,45 @@
     .hero-wrapper {
         padding-top: 180px;
         /* width: 100%; */
-        width: 1280px;
+        width: 1263px;
         height: auto;
+    }
+
+
+    .hero-wrapper img {
+        margin: auto;
+        margin-top: -450px;
+        margin-right: -300px;
+        position: relative;
+        height: auto;
+        /* background-image: url('../images/hero-img.jpg'); */
+        /* background-size: cover; */
+        /* background-position: center; */
+    }
+
+    .hero-cta {
+        position: absolute;
+        bottom: 0;
+        top: 450px;
+        left: 900px;
+        /* width: 90%; */
+        padding: 2px;
+        text-align: center;
+        color: white;
+        /* box-sizing: border-box; */
+    }
+
+
+    .directory-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .directory-container.list .directory-item {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0.25rem;
     }
 }

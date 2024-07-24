@@ -21,29 +21,29 @@ header {
 }
 
 /* Responsive hero image setup */
-.hero-wrapper {
-    margin-top: -17px; /* Ensure this negative margin is necessary */
+.hero-wrapper img {
+    margin: auto;
+    margin-top: -20px;
     position: relative;
-    background-image: url('../images/hero-img.jpg');
-    background-size: cover;
-    background-position: center;
+    /* background-image: url('../images/hero-img.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
     background-repeat: no-repeat;
-    padding: 40px;
-    padding-top: 200px;
-    width: 313px;
+    /* padding: 200px; */
+    width: 100%;
 }
 
 
 /* Text alignment for CTA within the hero wrapper */
 .hero-cta {
     position: absolute;
-    bottom: 2px;
-    left: 10px;
-    width: 90%;
+    bottom: 280px;
+    left: 35px;
+    /* width: 100%; */
     padding: 2px;
     text-align: center;
     color: white;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .hero-cta h1 {
@@ -201,21 +201,22 @@ ul li {
 footer {
     color: #eceeef;
     display: grid;
+    gap: 10px;
     background-color: #36454f;
 }
 
 /* Responsive directory container setup */
 .directory-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 10px;
     align-items: center;
     font-size: small;
 }
 
 /* Styling for links within the directory container */
 .directory-container a {
-    font-size: smaller;
+    font-size: 14px;
     font-weight: lighter;
 }
 
@@ -247,12 +248,13 @@ footer {
 
 /* Grid setup for directory items in list view */
 .directory-container.list .directory-item {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    display: block;
+    /* grid-template-columns: 2fr 1fr 1fr; */
     align-items: center;
     gap: 10px;
     margin: 0;
     padding: 0.25rem;
+    width: 100%;
 }
 
 /* Hiding images in list view for directory items */
@@ -268,4 +270,10 @@ footer {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.thankyou {
+    text-align: center;
+    padding-top: 50px;
+    font-size: medium;
 }

@@ -21,9 +21,14 @@
 <body>
     <header>
         <div class="hero-wrapper">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-img.jpg">
+                <source media="(min-width: 960px)" srcset="images/hero-img.jpg">
+                <img src="images/hero-img.jpg" alt="Lafenwa market abeokuta.">
+            </picture>
             <div class="hero-cta">
                 <h1>Abeokuta Chamber of Commerce</h1>
-                <p><a href="#">Join Us</a></p>
+                <p><a href="join.html">Join Us</a></p>
             </div>
         </div>
     </header>
@@ -33,7 +38,7 @@
         <a href="index.html">Home</a>
         <a href="../week01/chamber-site-plan.html">Site Plan</a>
         <a href="discover.html">Discover</a>
-        <a href="join.html">Form</a>
+        <a href="join.html">Join Us</a>
     </nav>
 
     <main>
@@ -47,10 +52,9 @@
         </article>
     </main>
     <footer>
-        <div><p id="copyright"></p>Abeokuta Chamber of Commerce</div>
+        <p id="copyright"></p>
         <p id="lastModified"></p>
-        <p>info@abeokutachamber.com</p>
-        <p>WDD230</p>
+        <p>Pascal E. Okezie | Nigeria. | WDD 230</p>
     </footer>
     <script src="../scripts/getDates.js"></script>
 </body>
